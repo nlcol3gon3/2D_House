@@ -1,0 +1,23 @@
+import cairo
+
+# Set up surface
+surface = cairo.ImageSurface(cairo.FORMAT_RGB24, 800, 600)
+ctx = cairo.Context(surface)
+ctx.set_source_rgb(0.8, 0.8, 0.8)
+ctx.paint()
+
+# Floor
+ctx.move_to(200, 430)
+# A
+ctx.line_to(320, 480) # A
+# B
+ctx.line_to(450, 390) # B
+# C
+ctx.line_to(450, 410) # C
+# D
+ctx.line_to(320, 500) # D
+ctx.line_to(200, 450) # E
+ctx.close_path()
+
+ctx.set_source_rgb(0.3, 0.3, 0.3)
+ctx.fill()
