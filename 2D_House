@@ -21,3 +21,48 @@ ctx.close_path()
 
 ctx.set_source_rgb(0.3, 0.3, 0.3)
 ctx.fill()
+
+ctx.fill()
+#stairs_UPCASE
+ctx.move_to(450, 390)#A
+ctx.line_to (495, 360) # B
+ctx.line_to (515, 370) # C
+ctx.line_to (470, 400) # D
+ctx.close_path()
+
+
+ctx.set_source_rgb(0.3, 0.3, 0.3)
+
+ctx.set_line_width(2)
+
+ctx.stroke()
+
+
+#stairs_sidepart
+
+ctx.move_to(450, 410) # A
+ctx.line_to (480, 425) # B
+ctx.line_to (480, 413) # C
+ctx.line_to (470, 408) # D
+ctx.line_to (470, 400) # D
+#ctx.line_to (530, 385) # B
+
+
+ctx.set_source_rgb(0.3, 0.3, 0.3)
+
+ctx.set_line_width(2)
+
+ctx.stroke()
+
+#stairs_frontpart
+
+ctx.move_to (480, 413) # A
+ctx.line_to (530, 380) # C
+ctx.line_to (530, 393) # C
+ctx.line_to (480, 426) # A
+ctx.close_path()
+
+
+ctx.set_source_rgb(0.3, 0.3, 0.3)
+
+ctx.fill()
